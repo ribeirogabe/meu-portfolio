@@ -1,0 +1,1137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* 🐱‍💻 TELA DE START */
+
+/* general screen style */
+
+.start-screen{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffd500;
+}
+
+/* title style */
+
+.start-title-screen{
+    display: flex;
+    flex-direction: column-reverse;
+    filter: drop-shadow(6px 5px 1px #110b2e);
+    width: 1100px;
+    color: #fff8ed;
+    font-size: 4rem;
+    text-align: center;
+    cursor: default;
+    position: relative;
+    animation: changeResize 700ms forwards linear alternate;
+}
+
+.start-title-screen span{
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+
+/* button style */
+
+.start-button{
+    font-family: 'Press Start 2P', cursive;
+    padding: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    top: 10vh;
+    border: 3px solid #fff8ed;
+    background-color: #110b2e;
+    color: #fff8ed;
+    transition: 200ms;
+    animation: changeResizeButton 700ms forwards linear;
+}
+
+.start-button:hover{
+    border: 3px solid #110b2e;
+    background-color: #fff8ed;
+    color: #110b2e;
+}
+
+/* 🐱‍🐉 KEYFRAMES TELA DE START*/
+
+/* animation title */
+
+@keyframes changeResize{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/* animation button start */
+
+@keyframes changeResizeButton{
+    from{
+        transform: scale(0);
+    }
+    to{
+
+        transform: scale(1);
+    }
+}
+
+
+/* animation click button hide screen start */
+
+.hide-start-screen-animation{
+    animation: hiddenStartScreen 400ms forwards linear;
+}
+
+@keyframes hiddenStartScreen{
+    from{
+        height: 100vh;
+    }
+
+    to{
+        height: 0vh;
+    }
+}
+
+.hide-title-and-button{
+    animation: hiddenTitleAndButton 400ms linear forwards;
+}
+
+@keyframes hiddenTitleAndButton{
+    from{
+        transform: scale(1);
+    }
+    to{
+
+        transform: scale(0);
+    }
+}
+
+
+
+
+
+
+
+
+/* 🐱‍💻 TELA DO PORTFÓLIO */
+
+/* general content style */
+
+.portfolio-general-content{
+    background-color: #ffd500;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* about me style  card */
+.about-me-content{
+    background-color: #110b2e;
+    width: 330px;
+    height: 650px;
+    border: 5px solid#fff8ed;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3vh;
+    left: 3vh;
+    position: fixed;
+    filter: drop-shadow(1px 1px 3px black);
+    
+}
+
+/* gif pixel art style */
+
+/* ===div */
+.me-image-pixel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 4vh;
+    left: 6vh;
+    width: 230px;
+}
+
+/* ===img */
+.image-pixel-art{
+    width: 230px;
+    border: 5px solid #fff8ed;
+    border-radius: 20px;
+    background-color: #ffd500;
+}
+
+/* ===linkedin e github style icon */
+.icon-media{
+    width: 150px;
+    font-size: 40px;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    text-align: center;
+}
+
+/* ===icon linkedin*/
+
+.icon-lk{
+    position: relative;
+    right: 4vh;
+    color: #fff8ed;
+    cursor: pointer;
+}
+
+.icon-lk:hover{
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+
+/* ===icon git hub */
+.icon-gh{
+    color: #fff8ed;
+    cursor: pointer;
+}
+
+.icon-gh:hover{
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+/* about me text */
+
+.text-about-me-content{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    left: 10px;
+    top: 40px;
+}
+
+.text-content{
+    font-size: 0.8rem;
+    margin-top: 20px;
+    border-bottom: 3px solid #fff8ed;
+    color: #fff8ed;
+}
+
+.text-content i{
+    font-size: 2rem;
+}
+
+.about-me-card-description{
+    position: relative;
+    font-size: 1.4rem;
+    top: 20px;
+    width: 300px;
+    font-family: 'Fira Sans Condensed', sans-serif;   
+    padding: 10px;
+    background-color: #fff8ed;
+    color: #110b2e;
+    border: 3px solid #fff8ed;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* NAV BAR STYLE */
+
+.nav-bar-content{
+    position: absolute;
+    left: 380px;
+    display: flex;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+.nav-bar-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 466px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: none;
+    position: absolute;
+    top: 30px;
+    color: #fff8ed;
+}
+
+.nav-bar-list-item{
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+/* ABOUT ME NAV BAR STYLE */
+
+.item-about-me{
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid #fff8ed;
+    background-color: #110b2e;
+}
+
+.item-about-me:hover{
+    background-color: #615873;
+}
+
+
+
+/* PROJECTS NAV BAR STYLE */
+.item-projects{
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid #fff8ed;
+    background-color: #110b2e;
+}
+
+.item-projects:hover{
+    background-color: #615873;
+}
+
+
+/* CONTACT NAV BAR STYLE */
+
+.item-contact{
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid #fff8ed;
+    background-color: #110b2e;
+}
+
+
+.item-contact:hover{
+    background-color: #615873;
+}
+
+
+
+
+/* animation show content */
+
+.add-show-animation-content{
+    animation: showContentAboutMe 1s 0s forwards linear;
+}
+
+.add-show-animation-content-two{
+    animation: showContentAboutMe 1s 800ms forwards linear;
+}
+
+.add-show-animation-content-three{
+    animation: showContentAboutMe 1s 1600ms forwards linear;
+}
+
+
+.add-show-animation-img-note{
+    animation: showContentAboutMe 1s 2200ms forwards linear;
+}
+
+.add-show-animation-file-dwld{
+    animation: showContentAboutMe 1s 3000ms forwards linear;
+}
+@keyframes showContentAboutMe{
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+/* ABOUT ME SCREEN/SQUARE STYLE  */
+
+.about-me-screen{
+    background-color: #110b2e;
+    border: 3px solid #fff8ed;
+    border-radius: 1px 10px 10px 10px;
+    width: 960px;
+    height: 575px;
+    position: relative;
+    top: 72px;
+    left: 380px;
+    display: flex;
+    filter: drop-shadow(1px 3px 3px black);
+    overflow-x: hidden;
+}
+
+/* about me full description */
+
+.about-me-description{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff8ed;
+}
+
+.about-me-one{
+    width: 500px;
+    opacity: 0;
+}
+
+.about-me-two{
+    width: 500px;
+    opacity: 0;
+}
+
+.about-me-three{
+    width: 540px;
+    opacity: 0;
+}
+
+.img-note{
+    position: relative;
+    right: 120px;
+    bottom: 70px;
+    opacity: 0;
+}
+
+.arquivo-download{
+    color: #110b2e;
+    position: absolute;
+    left: 640px;
+    top: 470px;
+    background-color: #ffd500;
+    padding: 15px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.arquivo-download:hover{
+    background-color: #ffe252;
+    transition: 300ms;
+}
+
+
+
+
+
+/* PROJECTS SCREEN/SQUARE STYLE */
+
+.projects-screen{
+    background-color: #110b2e;
+    border: 3px solid #fff8ed;
+    border-radius: 1px 10px 10px 10px;
+    width: 960px;
+    height: 575px;
+    position: absolute;
+    top: 72px;
+    left: 380px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow(1px 3px 3px black);
+}
+
+
+
+
+
+/* project jogo da velha */
+.project-jogo-da-velha{
+    width: 430px;
+    height: 250px;
+    padding: 15px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 5px black);
+    opacity: 0;
+}
+
+.project-jogo-da-velha:hover{
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+.project-jdv{
+    width: 400px;
+    height: 200px;
+}
+
+.project-jdv-title{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 0.6rem;
+    cursor: default;
+    background-color: #fff8ed;
+    border-top: 1px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+
+
+
+/* project jogo da memoria */
+.project-jogo-da-memoria{
+    width: 430px;
+    height: 250px;
+    padding: 15px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 5px black);
+    opacity: 0;
+}
+
+.project-jogo-da-memoria:hover{
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+.project-jdm{
+    width: 400px;
+    height: 200px;
+}
+
+.project-jdm-title{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 0.6rem;
+    background-color: #fff8ed;
+    border-top: 1px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* project login and register */
+.project-login-screen{
+    width: 430px;
+    height: 250px;
+    padding: 15px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 5px black);
+    opacity: 0;
+}
+
+.project-login-screen:hover{
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+.project-login{
+    width: 400px;
+    height: 200px;
+}
+
+
+.project-login-title{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 0.6rem;
+    background-color: #fff8ed;
+    border-top: 1px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* project todo list*/
+.project-todo-list{
+    width: 430px;
+    height: 250px;
+    padding: 15px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 5px black);
+    opacity: 0;
+}
+
+.project-todo-list:hover{
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+.project-todo{
+    width: 400px;
+    height: 200px;
+}
+
+.project-todo-title{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 0.6rem;
+    background-color: #fff8ed;
+    border-top: 1px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/* show projects */
+
+.add-show-content-project-one{
+    animation: showContentProjects 500ms 0s linear forwards;
+}
+.add-show-content-project-two{
+    animation: showContentProjects 500ms 400ms linear forwards;
+}
+.add-show-content-project-three{
+    animation: showContentProjects 500ms 800ms linear forwards;
+}
+.add-show-content-project-four{
+    animation: showContentProjects 500ms 1200ms linear forwards;
+}
+
+@keyframes showContentProjects{
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* CONTACT SCREEN/SQUARE STYLE */
+.contact-screen{
+    background-color: #110b2e;
+    border: 3px solid #fff8ed;
+    border-radius: 1px 10px 10px 10px;
+    width: 960px;
+    height: 575px;
+    position: absolute;
+    top: 72px;
+    left: 380px;
+    display: none;
+    align-items: center;
+    filter: drop-shadow(1px 3px 3px black);
+    overflow: hidden;
+}
+
+.contact-me{
+    width: 400px;
+    height: 510px;
+    position: relative;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+}
+
+.visit-name{
+    padding: 10px;
+    width: 400px;
+}
+
+.visit-email{
+    padding: 10px;
+    width: 400px;
+}
+
+.comment-area{
+    resize: none;
+}
+
+input, textarea{
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input:focus, textarea:focus{
+    outline: 0;
+    border: 2px solid #fff8ed;
+    background-color: #ffd500;
+    color: #000000;
+}
+
+.contact-submit-btn{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #110b2e;
+    color: #fff8ed;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff8ed;
+}
+.contact-submit-btn:hover{
+    background-color: #fff8ed;
+    color: #110b2e;
+    transition: 400ms;
+    border: 3px solid #110b2e;
+}
+
+.contact-map{
+    width: 450px;
+    height: 360px;
+    position: relative;
+    left: 60px;
+    bottom: 60px;
+    border: 3px solid #292831;
+    filter: hue-rotate(40deg);
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.more-contact{
+    width: 130px;
+    position: absolute;
+    top: 450px;
+    right: 200px;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+
+}
+
+.more-contact h1{
+    font-size: 0.8rem;
+    position: absolute;
+    width: 500px;
+    text-align: center;
+    color: #fff8ed;
+    cursor: default;
+}
+
+.more-contact i{
+    cursor: pointer;
+    color: #fff8ed;
+    font-size: 2rem;
+    position: relative;
+    top: 40px;
+}
+
+.more-contact i:hover{
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+.add-show-contact-content{
+   animation: showContactContent 800ms 0s linear forwards;
+}
+.add-show-contact-content-map{
+    animation: showContactContentMap 800ms 500ms linear forwards;
+ }
+ .add-show-contact-content-more{
+    animation: showContactContentMore 800ms 1s linear forwards;
+ }
+
+@keyframes showContactContent{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes showContactContentMap{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes showContactContentMore{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    body{
+        background-color: #110b2e;
+    }
+
+
+    /* TELA DE START */
+    .start-screen{
+        display: none;
+    }
+
+
+    /* PORTFOLIO GERAL */
+    .portfolio-general-content{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        background-color: #110b2e;
+    }
+
+    .about-me-content{
+        border: none;
+        border-radius: 0;
+        background-color: #110b2e;
+        width: 100vw;
+        height: 95vh;
+        left: 0;
+        top: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        filter: none;
+        position: relative;
+    }
+
+    .me-image-pixel{
+        position: relative;
+        top: 10px;
+        left: 0;
+    }
+
+    .about-me-card-description{
+        font-size: 1.1rem;
+        position: relative;
+        right: 9px;
+    }
+
+   .text-about-me-content{
+        position: relative;
+        width: 300px;
+        height: 300px;
+   }
+
+   .text-content{
+        position: relative;
+        right: 9px;
+   }
+
+
+   /* Nav bar mobile */
+
+   .nav-bar-content{
+    filter: none;
+    top: 673px;
+   }
+
+
+   .item-about-me{
+    position: absolute;
+    right: 727px;
+    border: 0;
+    border-radius: 0;
+    width: 33vw;
+    height: 50px;
+    background-color: #ffd500;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    text-align: center;
+    border: 1px solid #000000;
+
+}
+
+
+.item-projects{
+    position: absolute;
+    right: 607px;
+    border: 0;
+    border-radius: 0;
+    width: 34vw;
+    height: 50px;
+    background-color: #ffd500;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.item-contact{
+    position: absolute;
+    right: 486px;
+    border: 0;
+    border-radius: 0;
+    width: 34vw;
+    height: 50px;
+    background-color: #ffd500;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+
+
+
+   /* SOBRE MIM FULL */
+   .about-me-screen{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        background-color: none;
+        filter: none;
+        top: 753px;
+
+   }
+
+   .item-about-me:hover{
+        background-color: 0;
+   }
+
+   
+   .about-me-description{
+        width: 100px;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: space-evenly;
+        
+   }
+
+   .about-me-one{
+        width: 300px;
+   }
+
+   .about-me-two{
+        width: 300px;
+   }
+
+   .about-me-three{
+        width: 300px;
+   }
+   .img-note{
+        display: none;
+   }
+
+   .arquivo-download{
+        display: none;
+   }
+
+
+/* parte dos projetos */
+
+   .projects-screen{
+        position: absolute;
+        display: flex;
+        left: 0;
+        width: 100%;
+        height: 1200px;
+        border-radius: 0;
+        border: none;
+        background-color: none;
+        filter: none;
+        top: 753px;
+        align-items: center;
+   }
+
+
+   /* jogo da velha project */
+   .project-jogo-da-velha{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    right: 13px;
+   }
+
+   .project-jdv{
+    width: 300px;
+    height: 150px;
+   }
+
+   .project-jdv-title{
+    width: 300px;
+   }
+
+
+
+
+/* jogo da memoria project */
+   .project-jogo-da-memoria{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    right: 13px;
+   }
+
+   .project-jdm{
+    width: 300px;
+    height: 150px;
+   }
+
+   .project-jdm-title{
+    width: 300px;
+   }
+
+
+
+/* tela de login project */
+   .project-login-screen{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    right: 13px;
+   }
+
+   .project-login{
+    width: 300px;
+    height: 150px;
+   }
+
+   .project-login-title{
+    width: 300px;
+   }
+
+
+/* todo list project */
+
+   .project-todo-list{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    right: 13px;
+   }
+
+   .project-todo{
+    width: 300px;
+    height: 150px;
+   }
+
+   .project-todo-title{
+    width: 300px;
+   }
+
+
+
+   /* SCREEN CONTACT */
+
+
+   .contact-screen{
+    position: absolute;
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: 640px;
+    border-radius: 0;
+    border: none;
+    background-color: none;
+    filter: none;
+    top: 753px;
+    align-items: center;
+}
+
+
+    .contact-me{
+        width: 320px;
+        position: absolute;
+        left: 12px;
+        bottom: 100px;
+    }
+
+    .visit-name{
+        width: 300px;
+    }
+
+    .visit-email{
+        width: 300px;
+    }
+
+    .comment-area{
+        width: 300px;
+    }
+
+    .contact-map{
+        display: none;
+    }
+
+    .more-contact{
+        position: absolute;
+        left: 120px;
+        top: 550px;
+    }
+
+
+}
+
+
+
+
+
+
