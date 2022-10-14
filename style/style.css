@@ -14,6 +14,9 @@ a{
     text-decoration: none;
 }
 
+.portfolio-content-mobile{
+    display: none;
+}
 
 
 /* 🐱‍💻 TELA DE START */
@@ -823,9 +826,10 @@ input:focus, textarea:focus{
 @media screen and (max-width:768px){
 
     body{
+        width: 100vw;
+        height: 100vh;
         background-color: #110b2e;
     }
-
 
     /* TELA DE START */
     .start-screen{
@@ -835,300 +839,333 @@ input:focus, textarea:focus{
 
     /* PORTFOLIO GERAL */
     .portfolio-general-content{
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        background-color: #110b2e;
+        display: none;
     }
 
-    .about-me-content{
-        border: none;
-        border-radius: 0;
-        background-color: #110b2e;
-        width: 100vw;
-        height: 95vh;
-        left: 0;
-        top: 0;
-        align-items: center;
+    /* responsividade começa aqui :) */
+    .portfolio-content-mobile{
         display: flex;
+    }
+
+    /* card sobre mim */
+    .about-me-card-mobile{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* div da imagem pixel */
+    .me-image-pixel-mobile{
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        filter: none;
-        position: relative;
     }
+    
+    /* imagem pixel */
+    .image-pixel-art-mobile{
+        width: 200px;
+        background-color: #ffd500;
+        border: 3px solid #fff8ed;
+        border-radius: 20px;
+        left: 50px;
 
-    .me-image-pixel{
-        position: relative;
-        top: 10px;
-        left: 0;
     }
-
-    .about-me-card-description{
-        font-size: 1.1rem;
-        position: relative;
-        right: 9px;
-    }
-
-   .text-about-me-content{
-        position: relative;
-        width: 300px;
-        height: 300px;
-   }
-
-   .text-content{
-        position: relative;
-        right: 9px;
-   }
-
-
-   /* Nav bar mobile */
-
-   .nav-bar-content{
-    filter: none;
-    top: 673px;
-   }
-
-
-   .item-about-me{
-    position: absolute;
-    right: 727px;
-    border: 0;
-    border-radius: 0;
-    width: 33vw;
-    height: 50px;
-    background-color: #ffd500;
-    display: flex;
-    align-items: center;
-    font-size: 0.8rem;
-    text-align: center;
-    border: 1px solid #000000;
-
-}
-
-
-.item-projects{
-    position: absolute;
-    right: 607px;
-    border: 0;
-    border-radius: 0;
-    width: 34vw;
-    height: 50px;
-    background-color: #ffd500;
-    display: flex;
-    align-items: center;
-    font-size: 0.8rem;
-    text-align: center;
-    border: 1px solid #000000;
-}
-
-.item-contact{
-    position: absolute;
-    right: 486px;
-    border: 0;
-    border-radius: 0;
-    width: 34vw;
-    height: 50px;
-    background-color: #ffd500;
-    display: flex;
-    align-items: center;
-    font-size: 0.8rem;
-    text-align: center;
-    border: 1px solid #000000;
-}
-
-
-
-
-   /* SOBRE MIM FULL */
-   .about-me-screen{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        border-radius: 0;
-        border: none;
-        background-color: none;
-        filter: none;
-        top: 753px;
-
-   }
-
-   .item-about-me:hover{
-        background-color: 0;
-   }
-
-   
-   .about-me-description{
+    /* icon linkedin e github */
+    .icon-media-mobile{
+        display: flex;
         width: 100px;
-        font-size: 0.7rem;
-        display: flex;
-        justify-content: space-evenly;
-        
-   }
-
-   .about-me-one{
-        width: 300px;
-   }
-
-   .about-me-two{
-        width: 300px;
-   }
-
-   .about-me-three{
-        width: 300px;
-   }
-   .img-note{
-        display: none;
-   }
-
-   .arquivo-download{
-        display: none;
-   }
-
-
-/* parte dos projetos */
-
-   .projects-screen{
-        position: absolute;
-        display: flex;
-        left: 0;
-        width: 100%;
-        height: 1200px;
-        border-radius: 0;
-        border: none;
-        background-color: none;
-        filter: none;
-        top: 753px;
-        align-items: center;
-   }
-
-
-   /* jogo da velha project */
-   .project-jogo-da-velha{
-    position: relative;
-    width: 300px;
-    height: 150px;
-    right: 13px;
-   }
-
-   .project-jdv{
-    width: 300px;
-    height: 150px;
-   }
-
-   .project-jdv-title{
-    width: 300px;
-   }
-
-
-
-
-/* jogo da memoria project */
-   .project-jogo-da-memoria{
-    width: 300px;
-    height: 150px;
-    position: relative;
-    right: 13px;
-   }
-
-   .project-jdm{
-    width: 300px;
-    height: 150px;
-   }
-
-   .project-jdm-title{
-    width: 300px;
-   }
-
-
-
-/* tela de login project */
-   .project-login-screen{
-    width: 300px;
-    height: 150px;
-    position: relative;
-    right: 13px;
-   }
-
-   .project-login{
-    width: 300px;
-    height: 150px;
-   }
-
-   .project-login-title{
-    width: 300px;
-   }
-
-
-/* todo list project */
-
-   .project-todo-list{
-    width: 300px;
-    height: 150px;
-    position: relative;
-    right: 13px;
-   }
-
-   .project-todo{
-    width: 300px;
-    height: 150px;
-   }
-
-   .project-todo-title{
-    width: 300px;
-   }
-
-
-
-   /* SCREEN CONTACT */
-
-
-   .contact-screen{
-    position: absolute;
-    display: flex;
-    left: 0;
-    width: 100%;
-    height: 640px;
-    border-radius: 0;
-    border: none;
-    background-color: none;
-    filter: none;
-    top: 753px;
-    align-items: center;
-}
-
-
-    .contact-me{
-        width: 320px;
-        position: absolute;
+        justify-content: space-between;
+        position: relative;
         left: 12px;
-        bottom: 100px;
     }
 
-    .visit-name{
+    .icon-media-mobile i{
+        font-size: 2.2rem;
+    }
+
+    /* sobre mim e descrição */
+
+    .about-me-card-content-mobile{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 95vw;
+
+    }
+
+    .text-content-mobile{
+        position: relative;
+        left: 15px;
+        color: #fff8ed;
+        font-size: 1rem;
+    }
+
+    .text-content-mobile i{
+        font-size: 2rem;
+    }
+
+    .about-me-card-description-mobile{
+        background-color: #fff8ed;
+        width: 90vw;
+        position: relative;
+        left: 5vw;
+        padding: 5px;
+        color: #110b2e;
+        font-family: 'Fira Sans Condensed', sans-serif;   
+        font-size: 1.4rem;
+        border-radius: 10px;
+    }
+
+
+    /* sobre mim conteudo da tela */
+
+    .about-me-content-mobile{
+        width: 100vw;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    /* titulo sobre mim */
+    .title-about-me-mobile{
+        color: #fff8ed;
+        background-color: #ffd500;
+        height: 50px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* texto sobre mim */
+    .about-me-content-mobile p{
+        font-size: 0.8rem;
+        padding: 15px;
+        color: #fff8ed;
+    }
+
+
+
+
+
+    
+    /* CONTEUDO PROJETOS */
+
+    .projects-content-mobile{
+        width: 100vw;
+        height: 900px;
+    }
+
+    .title-project-mobile{
+        color: #fff8ed;
+        background-color: #ffd500;
+        height: 50px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* jogo da velha */
+    .project-jogo-da-velha-mobile{
+        padding-left: 20px;
+        position: relative;
+        top: 20px;
+        filter: drop-shadow(3px 3px 4px black);
+    }
+
+    .project-jdv-mobile{
+        width: 320px;
+    }
+
+    .content-title-jdv-mobile{
+        background-color: #fff8ed;
+        width: 320px;
+        border-radius: 0px 0px 10px 10px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-jdv-title-mobile{
+        font-size: 0.6rem;
+    }   
+
+
+    /* projeto jogo da memoria */
+    .project-jogo-da-memoria-mobile{
+        padding-left: 20px;
+        position: relative;
+        top: 40px;
+        filter: drop-shadow(3px 3px 4px black);
+    }
+
+    .project-jdm-mobile{
+        width: 320px;
+    }
+
+    .content-title-jdm-mobile{
+        background-color: #fff8ed;
+        width: 320px;
+        border-radius: 0px 0px 10px 10px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-jdm-title-mobile{
+        font-size: 0.6rem;
+    }   
+
+
+
+    /* projeto tela de login */
+
+    .project-login-screen-mobile{
+        padding-left: 20px;
+            position: relative;
+            top: 60px;
+            filter: drop-shadow(3px 3px 4px black);
+    }
+    
+    .project-login-mobile{
+            width: 320px;
+    }
+    
+    .content-title-login-mobile{
+            background-color: #fff8ed;
+            width: 320px;
+            border-radius: 0px 0px 10px 10px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    
+    .project-login-title-mobile{
+            font-size: 0.6rem;
+    }   
+
+
+
+
+
+    /* projeto todo list */
+
+    .project-todo-list-mobile{
+        padding-left: 20px;
+        position: relative;
+        top: 80px;
+        filter: drop-shadow(3px 3px 4px black);
+    }
+
+    .project-todo-mobile{
+        width: 320px;
+    }
+
+    .content-title-todo-mobile{
+        background-color: #fff8ed;
+        width: 320px;
+        border-radius: 0px 0px 10px 10px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-todo-title-mobile{
+        font-size: 0.6rem;
+    }   
+
+    /* CONTEUDO CONTATO */
+
+    .contact-content-mobile{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .title-contact-mobile{
+        color: #fff8ed;
+        background-color: #ffd500;
+        height: 50px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* CONTEUDO CONTATO */
+
+    .contact-content-mobile{
+        width: 100vw;
+        height: 750px;
+    }
+
+    .contact-me-mobile{
+        position: relative;
+        top: 20px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .visit-name-mobile{
         width: 300px;
     }
 
-    .visit-email{
+    .visit-email-mobile{
         width: 300px;
     }
 
-    .comment-area{
+    .comment-area-mobile{
         width: 300px;
+        height: 200px;
     }
 
-    .contact-map{
-        display: none;
+    .contact-submit-btn-mobile{
+        padding: 10px;
+        border: 2px solid #fff8ed;
+        border-radius: 5px;
+        background-color: #292831;
+        color: #fff8ed;
     }
 
-    .more-contact{
-        position: absolute;
-        left: 120px;
-        top: 550px;
+    .contact-map-mobile{
+        position: relative;
+        top: 20px;
+        margin-left: 28px;
     }
 
+    .more-contact-mobile{
+        position: relative;
+        padding-top: 50px;
+    }
 
-}
+    .more-contact-mobile h1{
+        color: #fff8ed;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .more-contact-mobile i{
+        color: #fff8ed;
+        font-size: 3rem;
+        position: relative;
+        left: 130px;
+        padding-top: 10px;
+    }
+ }
+
 
 
 

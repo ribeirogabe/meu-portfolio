@@ -3,7 +3,7 @@
 const startButton = document.querySelector(".start-button")
 
 startButton.addEventListener('click', hideStartScreen)
-document.addEventListener('DOMContentLoaded', showParagraphs)
+startButton.addEventListener('click', showParagraphs)
 
 function hideStartScreen (){
 
