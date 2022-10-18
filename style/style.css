@@ -394,22 +394,25 @@ a{
     flex-direction: column;
     justify-content: space-between;
     color: #fff8ed;
-    line-height: 18px;
+    font-size: 1.3rem;
 }
 
 .about-me-one{
     width: 500px;
     opacity: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;   
 }
 
 .about-me-two{
     width: 500px;
     opacity: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;   
 }
 
 .about-me-three{
     width: 520px;
     opacity: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;   
 }
 
 .img-note{
