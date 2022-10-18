@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@600&display=swap" rel="stylesheet">
-
+    <link href="http://fonts.cdnfonts.com/css/wonder-boy-in-monster-world" rel="stylesheet">
+                
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>GABRIEL RIBEIRO | PORTFOLIO</title>
 </head>
@@ -99,7 +100,7 @@
 
             <img class="img-note" src="./assets/pixel-note.png">
 
-            <CV class="arquivo-download" href="#" download>CV DOWNLOAD</a>
+            <a class="arquivo-download" href="./assets/curriculo/Gabriel-ribeiro-front-end.pdf" target="_blank">Visualizar CV</a>
         </div>
             <!-- PROJECT SCREEN -->
         <div class="projects-screen">
@@ -158,11 +159,20 @@
             <!-- CONTACT SCREEN -->
         <div class="contact-screen">
 
-            <form class="contact-me">
+            <form action="https://api.staticforms.xyz/submit" method="post" class="contact-me">
+               
+                
+                <input type="hidden" name="accessKey" value="5efd3530-f912-4aed-8597-5c353b0a8c66">
+                <input type="hidden" name="redirectTo" value="https://ribeirogabe.github.io/meu-portfolio/">
 
-                <input class="visit-name" type="text" name="name" placeholder="Seu nome aqui! :)">
-                <input class="visit-email" type="email" name="email" placeholder="Seu email aqui! :)">
-                <textarea class="comment-area" cols="50" rows="15" placeholder="Deixe seu comentário aqui!"></textarea>
+                <label for="name">Nome</label>
+                <input id="inputName" class="visit-name" type="text" name="name" placeholder="Seu nome aqui! :)">
+                
+                <label for="email">Email</label>
+                <input id="inputEmail" class="visit-email" type="email" name="email" placeholder="Seu email aqui! :)">
+                
+                <label for="message">Mensagem</label>
+                <textarea id="txtmessage" class="comment-area" name="message" cols="50" rows="15" placeholder="Deixe seu comentário aqui!"></textarea>
 
                 <button type="submit" class="contact-submit-btn">ENVIAR</button>
 
@@ -312,11 +322,23 @@
             <div class="contact-content-mobile">
                 <h3 class="title-contact-mobile">CONTATO</h3>
 
-                <form class="contact-me-mobile">
+                <form action="https://api.staticforms.xyz/submit" method="post"  class="contact-me-mobile">
 
-                    <input class="visit-name-mobile" type="text" name="name" placeholder="Seu nome aqui! :)">
+                    <input type="hidden" name="accessKey" value="5efd3530-f912-4aed-8597-5c353b0a8c66">
+                    <input type="hidden" name="redirectTo" value="https://ribeirogabe.github.io/meu-portfolio/">
+    
+                    <label for="name">Nome</label>
+                    <input id="inputName" class="visit-name-mobile" type="text" name="name" placeholder="Seu nome aqui! :)">
+                    
+                    <label for="email">Email</label>
+                    <input id="inputEmail" class="visit-email-mobile" type="email" name="email" placeholder="Seu email aqui! :)">
+                    
+                    <label for="message">Mensagem</label>
+                    <textarea id="txtmessage" class="comment-area-mobile" name="message" cols="50" rows="15" placeholder="Deixe seu comentário aqui!"></textarea>
+
+                    <!-- <input class="visit-name-mobile" type="text" name="name" placeholder="Seu nome aqui! :)">
                     <input class="visit-email-mobile" type="email" name="email" placeholder="Seu email aqui! :)">
-                    <textarea class="comment-area-mobile" cols="50" rows="15" placeholder="Deixe seu comentário aqui!"></textarea>
+                    <textarea class="comment-area-mobile" cols="50" rows="15" placeholder="Deixe seu comentário aqui!"></textarea> -->
     
                     <button type="submit" class="contact-submit-btn-mobile">ENVIAR</button>
     

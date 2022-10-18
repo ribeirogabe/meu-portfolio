@@ -394,6 +394,7 @@ a{
     flex-direction: column;
     justify-content: space-between;
     color: #fff8ed;
+    line-height: 18px;
 }
 
 .about-me-one{
@@ -407,7 +408,7 @@ a{
 }
 
 .about-me-three{
-    width: 540px;
+    width: 520px;
     opacity: 0;
 }
 
@@ -421,7 +422,7 @@ a{
 .arquivo-download{
     color: #110b2e;
     position: absolute;
-    left: 640px;
+    left: 600px;
     top: 470px;
     background-color: #ffd500;
     padding: 15px;
@@ -684,12 +685,12 @@ a{
 
 .visit-name{
     padding: 10px;
-    width: 400px;
+    width: 385px;
 }
 
 .visit-email{
     padding: 10px;
-    width: 400px;
+    width: 385px;
 }
 
 .comment-area{
@@ -723,6 +724,7 @@ input:focus, textarea:focus{
     align-items: center;
     border: 3px solid #fff8ed;
 }
+
 .contact-submit-btn:hover{
     background-color: #fff8ed;
     color: #110b2e;
@@ -732,10 +734,10 @@ input:focus, textarea:focus{
 
 .contact-map{
     width: 450px;
-    height: 360px;
+    height: 330px;
     position: relative;
     left: 60px;
-    bottom: 60px;
+    bottom: 55px;
     border: 3px solid #292831;
     filter: hue-rotate(40deg);
     border-radius: 10px;
@@ -786,6 +788,12 @@ input:focus, textarea:focus{
     animation: showContactContentMore 800ms 1s linear forwards;
  }
 
+ label{
+    color: #fff8ed;
+    display: flex;
+    font-size: 0.8rem;
+ }
+
 @keyframes showContactContent{
     from{
         opacity: 0;
@@ -823,7 +831,385 @@ input:focus, textarea:focus{
 
 
 
-@media screen and (max-width:768px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+@media screen and (max-width:1024px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #110b2e;
+    }
+
+    /* TELA DE START */
+    .start-screen{
+        display: none;
+    }
+
+
+    /* PORTFOLIO GERAL */
+    .portfolio-general-content{
+        display: none;
+    }
+
+    /* responsividade começa aqui :) */
+    .portfolio-content-mobile{
+        display: flex;
+    }
+
+    /* card sobre mim */
+    .about-me-card-mobile{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* div da imagem pixel */
+    .me-image-pixel-mobile{
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* imagem pixel */
+    .image-pixel-art-mobile{
+        width: 300px;
+        background-color: #ffd500;
+        border: 3px solid #fff8ed;
+        border-radius: 20px;
+        left: 50px;
+
+    }
+    /* icon linkedin e github */
+    .icon-media-mobile{
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        position: relative;
+        left: 12px;
+    }
+
+    .icon-media-mobile i{
+        font-size: 5rem;
+    }
+
+    /* sobre mim e descrição */
+
+    .about-me-card-content-mobile{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 95vw;
+
+    }
+
+    .text-content-mobile{
+        position: relative;
+        left: 15px;
+        color: #fff8ed;
+        font-size: 2rem;
+    }
+
+
+    .text-content-mobile i{
+        font-size: 3rem;
+    }
+
+    .about-me-card-description-mobile{
+        background-color: #fff8ed;
+        width: 90vw;
+        position: relative;
+        left: 2.5%;
+        padding: 10px;
+        color: #110b2e;
+        font-family: 'Fira Sans Condensed', sans-serif;   
+        font-size: 3rem;
+        border-radius: 10px;
+    }
+
+
+    /* sobre mim conteudo da tela */
+
+    .about-me-content-mobile{
+        width: 100vw;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    /* titulo sobre mim */
+    .title-about-me-mobile{
+        color: #fff8ed;
+        background-color: #ffd500;
+        height: 50px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* texto sobre mim */
+    .about-me-content-mobile p{
+        font-size: 2.1rem;
+        padding: 30px;
+        color: #fff8ed;
+        font-family: 'Fira Sans Condensed', sans-serif;   
+    }
+
+
+
+
+
+    
+    /* CONTEUDO PROJETOS */
+
+    .projects-content-mobile{
+        width: 100vw;
+        height: 1600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-project-mobile{
+        color: #fff8ed;
+        background-color: #ffd500;
+        width: 100vw;
+        height: 50px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+
+    /* jogo da velha */
+    .project-jogo-da-velha-mobile{
+        position: relative;
+        top: 20px;
+        filter: drop-shadow(3px 3px 4px black);
+    }
+
+    .project-jdv-mobile{
+        width: 620px;
+    }
+
+    .content-title-jdv-mobile{
+        background-color: #fff8ed;
+        width: 620px;
+        border-radius: 0px 0px 10px 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-jdv-title-mobile{
+        font-size: 1rem;
+    }   
+
+
+    /* projeto jogo da memoria */
+    .project-jogo-da-memoria-mobile{
+        position: relative;
+        top: 40px;
+        filter: drop-shadow(3px 3px 4px black);
+    }
+
+    .project-jdm-mobile{
+        width: 620px;
+    }
+
+    .content-title-jdm-mobile{
+        background-color: #fff8ed;
+        width: 620px;
+        border-radius: 0px 0px 10px 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-jdm-title-mobile{
+        font-size: 1rem;
+    }   
+
+
+
+    /* projeto tela de login */
+
+    .project-login-screen-mobile{
+            position: relative;
+            top: 60px;
+            filter: drop-shadow(3px 3px 4px black);
+    }
+    
+    .project-login-mobile{
+            width: 620px;
+    }
+    
+    .content-title-login-mobile{
+            background-color: #fff8ed;
+            width: 620px;
+            border-radius: 0px 0px 10px 10px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    
+    .project-login-title-mobile{
+            font-size: 1rem;
+    }   
+
+
+
+
+
+    /* projeto todo list */
+
+    .project-todo-list-mobile{
+        position: relative;
+        top: 80px;
+        filter: drop-shadow(3px 3px 4px black);
+    }
+
+    .project-todo-mobile{
+        width: 620px;
+    }
+
+    .content-title-todo-mobile{
+        background-color: #fff8ed;
+        width: 620px;
+        border-radius: 0px 0px 10px 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-todo-title-mobile{
+        font-size: 1rem;
+    }   
+
+    /* CONTEUDO CONTATO */
+
+    label{
+        font-size: 1rem;
+    }
+
+    .contact-content-mobile{
+        width: 100vw;
+        height: 1250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-contact-mobile{
+        color: #fff8ed;
+        background-color: #ffd500;
+        height: 50px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .contact-me-mobile{
+        position: relative;
+        top: 20px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .visit-name-mobile{
+        width: 700px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .visit-email-mobile{
+        width: 700px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .comment-area-mobile{
+        width: 700px;
+        height: 200px;
+        font-size: 1.5rem;
+    }
+
+    .contact-submit-btn-mobile{
+        padding: 20px;
+        font-size: 1.3rem;
+        border: 2px solid #fff8ed;
+        border-radius: 5px;
+        background-color: #292831;
+        color: #fff8ed;
+    }
+
+    .contact-map-mobile{
+        position: relative;
+        top: 40px;
+        width: 700px;
+        height: 500px;
+    }
+
+    .more-contact-mobile{
+        position: relative;
+        padding-top: 100px;
+    }
+
+    .more-contact-mobile h1{
+        color: #fff8ed;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .more-contact-mobile i{
+        color: #fff8ed;
+        font-size: 3rem;
+        position: relative;
+        left: 130px;
+        padding-top: 10px;
+    }
+ }
+
+
+
+
+
+
+
+
+ 
+ @media screen and (max-width:768px){
 
     body{
         width: 100vw;
@@ -891,6 +1277,7 @@ input:focus, textarea:focus{
         height: 60vh;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-evenly;
         width: 95vw;
 
@@ -903,6 +1290,7 @@ input:focus, textarea:focus{
         font-size: 1rem;
     }
 
+
     .text-content-mobile i{
         font-size: 2rem;
     }
@@ -911,8 +1299,8 @@ input:focus, textarea:focus{
         background-color: #fff8ed;
         width: 90vw;
         position: relative;
-        left: 5vw;
-        padding: 5px;
+        left: 2.5%;
+        padding: 10px;
         color: #110b2e;
         font-family: 'Fira Sans Condensed', sans-serif;   
         font-size: 1.4rem;
@@ -928,7 +1316,6 @@ input:focus, textarea:focus{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-
     }
 
     /* titulo sobre mim */
@@ -944,9 +1331,10 @@ input:focus, textarea:focus{
 
     /* texto sobre mim */
     .about-me-content-mobile p{
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         padding: 15px;
         color: #fff8ed;
+        font-family: 'Fira Sans Condensed', sans-serif;   
     }
 
 
@@ -959,11 +1347,15 @@ input:focus, textarea:focus{
     .projects-content-mobile{
         width: 100vw;
         height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .title-project-mobile{
         color: #fff8ed;
         background-color: #ffd500;
+        width: 100vw;
         height: 50px;
         padding: 20px;
         display: flex;
@@ -971,9 +1363,11 @@ input:focus, textarea:focus{
         align-items: center;
     }
 
+
+    
+
     /* jogo da velha */
     .project-jogo-da-velha-mobile{
-        padding-left: 20px;
         position: relative;
         top: 20px;
         filter: drop-shadow(3px 3px 4px black);
@@ -1000,7 +1394,6 @@ input:focus, textarea:focus{
 
     /* projeto jogo da memoria */
     .project-jogo-da-memoria-mobile{
-        padding-left: 20px;
         position: relative;
         top: 40px;
         filter: drop-shadow(3px 3px 4px black);
@@ -1029,7 +1422,6 @@ input:focus, textarea:focus{
     /* projeto tela de login */
 
     .project-login-screen-mobile{
-        padding-left: 20px;
             position: relative;
             top: 60px;
             filter: drop-shadow(3px 3px 4px black);
@@ -1060,7 +1452,6 @@ input:focus, textarea:focus{
     /* projeto todo list */
 
     .project-todo-list-mobile{
-        padding-left: 20px;
         position: relative;
         top: 80px;
         filter: drop-shadow(3px 3px 4px black);
@@ -1104,15 +1495,26 @@ input:focus, textarea:focus{
 
     /* CONTEUDO CONTATO */
 
+    label{
+        font-size: 0.8rem;
+    }
+
     .contact-content-mobile{
         width: 100vw;
-        height: 750px;
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-contact-mobile{
+        width: 100vw;
     }
 
     .contact-me-mobile{
         position: relative;
         top: 20px;
-        height: 400px;
+        height: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1121,15 +1523,20 @@ input:focus, textarea:focus{
 
     .visit-name-mobile{
         width: 300px;
+        height: 40px;
+        font-size: 0.8rem;
     }
 
     .visit-email-mobile{
         width: 300px;
+        height: 40px;
+        font-size: 0.8rem;
     }
 
     .comment-area-mobile{
         width: 300px;
         height: 200px;
+        font-size: 0.8rem;
     }
 
     .contact-submit-btn-mobile{
@@ -1142,8 +1549,9 @@ input:focus, textarea:focus{
 
     .contact-map-mobile{
         position: relative;
-        top: 20px;
-        margin-left: 28px;
+        top: 30px;
+        width: 300px;
+        height: 400px;
     }
 
     .more-contact-mobile{
